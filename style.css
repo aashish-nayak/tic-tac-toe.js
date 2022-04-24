@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #078080;
+  --secondary: #f45d48;
+  --btn: #0d47a1;
+  --white: #fff;
+  --border: #232323;
+  --gray: #f8f5f2;
+  --bg: #f2f7f5;
+  --text: #00473e;
+}
+
+.space {
+  width: 100px;
+  height: 100px;
+  font-size: 64px;
+  display: inline-block;
+  border: 1px solid var(--border);
+  vertical-align: top;
+  text-align: center;
+  line-height: 150%;
+  background-color: var(--secondary);
+}
+
+.space span {
+  opacity: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: var(--bg);
+  font-size: 0;
+  height: 100vh;
+  font-family: Fuzzy Bubbles, cursive;
+}
+
+.game-title h1 {
+  font-family: Fuzzy Bubbles, cursive;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text);
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.game-title span{
+  color: var(--secondary);
+}
+
+.game-container {
+  width: 400px;
+  height: 400px;
+  border: 2px solid var(--border);
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--primary);
+}
+
+.game-board {
+  position: absolute;
+  top: 50px;
+  left: 47px;
+  display: inline-block;
+}
+
+.space.winbox {
+  background-color: var(--gray);
+}
+
+#prompt {
+  width: 300px;
+  height: 75px;
+  border: 2px solid var(--border);
+  border-radius: 5px;
+  position: absolute;
+  top: -20px;
+  left: 48px;
+  background-color: var(--white);
+  opacity: 0;
+  text-align: center;
+  color: var(--text);
+}
+
+#prompt-message {
+  font-size: 20px;
+  text-align: center;
+  padding: 5px 0 10px 0;
+}
+
+.prompt-button-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.prompt-button {
+  font-size: 16px;
+  height: 25px;
+  width: 65px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+#name-space {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  justify-content: space-between;
+  color: var(--bg);
+  margin: 10px auto;
+}
+.player-name {
+  width: auto;
+  border-radius: 2px;
+}
+
+.pointer {
+  cursor: pointer;
+}
