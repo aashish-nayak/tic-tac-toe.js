@@ -8,7 +8,7 @@
 :root {
   --primary: #078080;
   --secondary: #f45d48;
-  --btn: #0d47a1;
+  --btn: #078080;
   --white: #fff;
   --border: #232323;
   --gray: #f8f5f2;
@@ -56,6 +56,26 @@ body {
 
 .game-title span{
   color: var(--secondary);
+}
+
+.btn-primary{
+  background-color: var(--btn);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.btn-primary:hover, .btn-primary:focus{
+  background-color: var(--secondary);
+  color: var(--bg);
+  outline: none;
+  box-shadow: none;
 }
 
 .game-container {
